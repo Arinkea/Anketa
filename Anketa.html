@@ -1,1 +1,343 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета: Петров Александр Николаевич</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, #0a2e5a, #1a4b8c);
+            color: white;
+            padding: 30px 0;
+            border-bottom: 5px solid #d4af37;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .photo-placeholder {
+            width: 150px;
+            height: 180px;
+            background-color: #2c6bb3;
+            border: 3px solid #d4af37;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #1a4b8c;
+        }
+        
+        .card.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .card h2 {
+            color: #1a4b8c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card h2 i {
+            margin-right: 10px;
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            min-width: 220px;
+            color: #555;
+        }
+        
+        .info-value {
+            color: #222;
+        }
+        
+        .classified {
+            background-color: #f8f8f8;
+            border-left: 4px solid #d9534f;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+            color: #777;
+        }
+        
+        .family-section {
+            margin-top: 15px;
+            padding-left: 20px;
+            border-left: 2px solid #eaeaea;
+        }
+        
+        .parent {
+            margin-bottom: 25px;
+        }
+        
+        .parent-title {
+            font-weight: 600;
+            color: #1a4b8c;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .parent-title i {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            padding: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .secret-badge {
+            display: inline-block;
+            background-color: #d9534f;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
+        }
+        
+        .location-warning {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .location-warning i {
+            color: #ff9800;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="photo-placeholder">
+                    <div>ФОТОГРАФИЯ<br>НЕДОСТУПНА<br>(засекречено)</div>
+                </div>
+                <h1>Петров Александр Николаевич</h1>
+                <div class="subtitle">Военнослужащий</div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <h2><i class="fas fa-user"></i> Основная информация</h2>
+                <div class="info-item">
+                    <div class="info-label">Возраст:</div>
+                    <div class="info-value">27 лет</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Дата рождения:</div>
+                    <div class="info-value">17.09.1998</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Род деятельности:</div>
+                    <div class="info-value">Военный</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Город рождения:</div>
+                    <div class="info-value">Екатеринбург</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Город проживания:</div>
+                    <div class="info-value">Неизвестен</div>
+                </div>
+                <div class="location-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div><strong>Текущее местонахождение:</strong> Зона боевых действий СВО</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-users"></i> Семья</h2>
+                <div class="family-section">
+                    <div class="parent">
+                        <div class="parent-title"><i class="fas fa-female"></i> Мать</div>
+                        <div class="info-item">
+                            <div class="info-label">ФИО:</div>
+                            <div class="info-value">Петрова Анастасия Сергеевна</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Возраст:</div>
+                            <div class="info-value">69 лет</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Дата рождения:</div>
+                            <div class="info-value">30.03.1956</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Род деятельности:</div>
+                            <div class="info-value">Учитель начальных классов</div>
+                        </div>
+                    </div>
+                    
+                    <div class="parent">
+                        <div class="parent-title"><i class="fas fa-male"></i> Отец</div>
+                        <div class="info-item">
+                            <div class="info-label">ФИО:</div>
+                            <div class="info-value">Петров Николай Владимирович</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Возраст:</div>
+                            <div class="info-value">73 года</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Дата рождения:</div>
+                            <div class="info-value">17.11.1952</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Род деятельности:</div>
+                            <div class="info-value">Полицейский</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card full-width">
+                <h2><i class="fas fa-info-circle"></i> Дополнительная информация</h2>
+                <div class="classified">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <i class="fas fa-lock" style="margin-right: 10px;"></i>
+                        <strong>Доступ ограничен</strong>
+                        <span class="secret-badge">СЕКРЕТНО</span>
+                    </div>
+                    <p>Остальная информация засекречена и недоступна для просмотра. Доступ разрешён только уполномоченным лицам со специальным уровнем допуска.</p>
+                </div>
+                
+                <div style="margin-top: 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center;">
+                        <i class="fas fa-shield-alt" style="color: #1a4b8c; font-size: 20px; margin-right: 10px;"></i>
+                        <div>
+                            <div><strong>Статус: </strong>Активная служба</div>
+                            <div style="font-size: 14px; color: #666;">Анкета обновлена в соответствии с текущими данными</div>
+                        </div>
+                    </div>
+                    <div style="font-size: 12px; color: #888; text-align: right;">
+                        <div>Идентификатор записи: #PA-N-9827</div>
+                        <div>Формат: Официальная анкета</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© Официальная анкета. Данные защищены законодательством Российской Федерации.</p>
+            <p style="margin-top: 5px; font-size: 12px;">Несанкционированное распространение информации преследуется по закону.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Небольшой скрипт для имитации засекреченности данных
+        document.addEventListener('DOMContentLoaded', function() {
+            const secretItems = document.querySelectorAll('.info-item');
+            secretItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const label = this.querySelector('.info-label').textContent;
+                    if(label.includes('Город') || label.includes('мест')) {
+                        this.style.backgroundColor = '#fff8e1';
+                        setTimeout(() => {
+                            this.style.backgroundColor = '';
+                        }, 1000);
+                    }
+                });
+            });
+            
+            // Эффект при наведении на секретный бейдж
+            const secretBadge = document.querySelector('.secret-badge');
+            secretBadge.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+                this.style.transition = 'transform 0.2s';
+            });
+            
+            secretBadge.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
